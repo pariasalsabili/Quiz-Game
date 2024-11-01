@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Q&A Game with Categories</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="game-container">
+        <h1>Quiz Game</h1>
+        <div id="category-selection">
+            <label for="categories">Choose a category:</label>
+            <select id="categories"></select>
+            <button id="start-button" onclick="startGame()">Start Game</button>
+        </div>
+        <div id="question-container">
+            <div id="question-text"></div>
+            <div id="choices-container"></div>
+            <div id="message" style="margin-top: 10px; font-size: 1em; color: #333;"></div>
+            <button id="next-button" onclick="loadNextQuestion()" style="display: none;">Next Question</button>
+        </div>
+        <p id="score-text">Score: <span id="score">0</span></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
